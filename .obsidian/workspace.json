@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05运维/Linux.md",
+                "file": "01前端/Html/Svg.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux"
+              "title": "Svg"
             }
           }
         ]
@@ -183,14 +183,21 @@
       "bases:新建数据库": false
     }
   },
-  "active": "90488c3503953dd9",
+  "active": "b64feab891676ab6",
   "lastOpenFiles": [
-    "05运维/Docker.md",
-    "05运维/assets/adf1b5dd-7ccd-4158-ac8f-4cb8f5dcd387.png",
-    "05运维/Linux.md",
-    "index.md",
+    "01前端/Html/assets/svg-sprite.png",
+    "01前端/Html/Svg.md",
+    "01前端/前端工程化/monorepo架构.md",
     "01前端/前端工程化/编译和构建.md",
-    "README.md",
-    "01前端/前端工程化/monorepo架构.md"
+    "01前端/Html/assets",
+    "05运维/Docker.md",
+    "01前端/Html",
+    "02后端/ElasticSearch.md",
+    "02后端/Nacos.md",
+    "02后端/Redis.md",
+    "index.md",
+    "05运维/Linux.md",
+    "05运维/assets/adf1b5dd-7ccd-4158-ac8f-4cb8f5dcd387.png",
+    "README.md"
   ]
 }
