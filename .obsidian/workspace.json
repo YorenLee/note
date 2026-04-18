@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "52ec5b7e8ce61546",
+    "id": "81a3554afc291d47",
     "type": "split",
     "children": [
       {
-        "id": "eb3735b431f96c48",
+        "id": "53f4fffbcb9db138",
         "type": "tabs",
         "children": [
           {
-            "id": "b64feab891676ab6",
+            "id": "898dacc179c3a19b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03LLM/LangChain/05Runnable接口与任务编排系统.md",
+                "file": "03LLM/LangChain/02Modal IO/01调用模型1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05Runnable接口与任务编排系统"
+              "title": "01调用模型1"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "97a3e38e8a962f10",
+    "id": "f1ba99893f4447c6",
     "type": "split",
     "children": [
       {
-        "id": "4b16d0bec3a4e3b2",
+        "id": "799e912e0da9378c",
         "type": "tabs",
         "children": [
           {
-            "id": "90488c3503953dd9",
+            "id": "898b09999224c036",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "0f3939588cd42f8c",
+            "id": "7dae96c31e159e4f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "4224d399a5a7c34b",
+            "id": "bcc5ff70c3d53fdb",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 202.5
   },
   "right": {
-    "id": "44c2ba51db8ced19",
+    "id": "94e41ac0817463b5",
     "type": "split",
     "children": [
       {
-        "id": "bfe8b03bf677c503",
+        "id": "c30e38b2e50461f8",
         "type": "tabs",
         "children": [
           {
-            "id": "ba630e7a34a69df8",
+            "id": "3dd87c455cc33979",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "前端工程化/monorepo架构.md",
+                "file": "03LLM/LangChain/02Modal IO/01调用模型1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "monorepo架构 的反向链接列表"
+              "title": "01调用模型1 的反向链接列表"
             }
           },
           {
-            "id": "8a750f4e5dd8ad5e",
+            "id": "98612a305b7c4c8e",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "前端工程化/monorepo架构.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "monorepo架构 的出链列表"
+              "title": "index 的出链列表"
             }
           },
           {
-            "id": "35c3cb2bfc5dd9b4",
+            "id": "60d6972b761b47cb",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +137,7 @@
             }
           },
           {
-            "id": "4229034145219fc6",
+            "id": "650257d4ec2e1e5c",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,18 +151,18 @@
             }
           },
           {
-            "id": "064d32ed25ee35d4",
+            "id": "1394ca74aca823ad",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端工程化/monorepo架构.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "monorepo架构 的大纲"
+              "title": "index 的大纲"
             }
           }
         ]
@@ -180,32 +180,51 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "b64feab891676ab6",
+  "active": "898dacc179c3a19b",
   "lastOpenFiles": [
+    "03LLM/LangChain/assets/embedding.png",
+    "03LLM/LangChain/assets/chatModal.png",
+    "03LLM/LangChain/assets/textModal.png",
+    "2026-04-18.md",
+    "03LLM/LangChain/02Modal IO/01调用模型1.md",
+    "03LLM/LangChain/assets/modalIO1.png",
+    "_templates/note-template.md",
+    "_templates/dataview-template.md",
+    "quickadd-config.json",
+    "_templates/update-time.js",
+    "_templates",
+    "03LLM/LangChain/05Runnable接口与任务编排系统.md",
+    "未命名 1.base",
+    "未命名.base",
     "03LLM/LangChain/04 Callback机制与事件驱动架构.md",
+    "未命名.canvas",
+    "03LLM/LangChain/01概述/03核心组件.md",
+    "03LLM/LangChain/01概述/02应用开发场景.md",
+    "03LLM/LangChain/01概述/01架构设计.md",
+    "03LLM/LangChain/02Modal IO/01.md",
+    "03LLM/LangChain/02Modal I/01",
+    "03LLM/LangChain/02Modal I/O",
+    "03LLM/LangChain/02Modal IO",
+    "03LLM/LangChain/02Modal IO",
+    "03LLM/LangChain/assets/retrival.png",
+    "03LLM/LangChain/assets/model.png",
+    "03LLM/LangChain/assets/modal.png",
+    "03LLM/LangChain/assets/structure.png",
+    "03LLM/LangChain/01入门.md",
+    "03LLM/LangChain/06Vector向量化技术与语义搜索.md",
     "03LLM/LangChain/03记忆系统与对话管理.md",
     "03LLM/LangChain/02模版工程.md",
-    "03LLM/LangChain/01入门.md",
-    "03LLM/LangChain/assets/langchain.png",
-    "03LLM/LangChain/assets",
-    "03LLM/LangChain/05Runnable接口与任务编排系统.md",
-    "01前端/Html/Svg.md",
-    "03LLM/LangChain",
-    "01前端/Html/assets/svg-sprite.png",
-    "01前端/前端工程化/monorepo架构.md",
-    "01前端/前端工程化/编译和构建.md",
-    "01前端/Html/assets",
-    "05运维/Docker.md",
-    "01前端/Html",
-    "02后端/ElasticSearch.md",
-    "02后端/Nacos.md",
-    "02后端/Redis.md",
+    "03LLM/LangChain/assets/howtoselect.png",
+    "03LLM/LangChain/assets/fine.png",
+    "03LLM/LangChain/assets/Rag.png",
+    "03LLM/LangChain/01概述/02应用开发.md",
     "index.md",
-    "05运维/Linux.md",
-    "05运维/assets/adf1b5dd-7ccd-4158-ac8f-4cb8f5dcd387.png",
-    "README.md"
+    "03LLM/LangChain/01概述",
+    "README.md",
+    "01前端/Html/Svg.md"
   ]
 }
