@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03LLM/LangChain/02Modal IO/01调用模型1.md",
+                "file": "03LLM/LangChain/02Modal IO/02调用模型2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01调用模型1"
+              "title": "02调用模型2"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03LLM/LangChain/02Modal IO/01调用模型1.md",
+                "file": "03LLM/LangChain/02Modal IO/02调用模型2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "01调用模型1 的反向链接列表"
+              "title": "02调用模型2 的反向链接列表"
             }
           },
           {
@@ -186,21 +186,23 @@
   },
   "active": "898dacc179c3a19b",
   "lastOpenFiles": [
+    "03LLM/LangChain/02Modal IO/01调用模型1.md",
+    "03LLM/LangChain/02Modal IO/02调用模型2.md",
+    "03LLM/LangChain/05Runnable接口与任务编排系统.md",
+    "03LLM/LangChain/04 Callback机制与事件驱动架构.md",
+    "03LLM/LangChain/03记忆系统与对话管理.md",
     "03LLM/LangChain/assets/embedding.png",
     "03LLM/LangChain/assets/chatModal.png",
     "03LLM/LangChain/assets/textModal.png",
     "2026-04-18.md",
-    "03LLM/LangChain/02Modal IO/01调用模型1.md",
     "03LLM/LangChain/assets/modalIO1.png",
     "_templates/note-template.md",
     "_templates/dataview-template.md",
     "quickadd-config.json",
     "_templates/update-time.js",
     "_templates",
-    "03LLM/LangChain/05Runnable接口与任务编排系统.md",
     "未命名 1.base",
     "未命名.base",
-    "03LLM/LangChain/04 Callback机制与事件驱动架构.md",
     "未命名.canvas",
     "03LLM/LangChain/01概述/03核心组件.md",
     "03LLM/LangChain/01概述/02应用开发场景.md",
@@ -216,11 +218,9 @@
     "03LLM/LangChain/assets/structure.png",
     "03LLM/LangChain/01入门.md",
     "03LLM/LangChain/06Vector向量化技术与语义搜索.md",
-    "03LLM/LangChain/03记忆系统与对话管理.md",
     "03LLM/LangChain/02模版工程.md",
     "03LLM/LangChain/assets/howtoselect.png",
     "03LLM/LangChain/assets/fine.png",
-    "03LLM/LangChain/assets/Rag.png",
     "03LLM/LangChain/01概述/02应用开发.md",
     "index.md",
     "03LLM/LangChain/01概述",
