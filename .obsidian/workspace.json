@@ -186,10 +186,11 @@
   },
   "active": "898dacc179c3a19b",
   "lastOpenFiles": [
+    "05运维/Linux.md",
+    "05运维/Docker.md",
+    "05运维/CICD.md",
     "01前端/前端工程化/monorepo架构.md",
     "01前端/前端工程化/编译和构建.md",
-    "05运维/CICD.md",
-    "05运维/Docker.md",
     "01前端/02Css/01基础/滚动条.md",
     "01前端/02Css/01基础/选择器.md",
     "01前端/02Css/assets/scrollbar-props_2.png",
@@ -231,7 +232,6 @@
     "03LLM/LangChain/assets/model.png",
     "03LLM/LangChain/01入门.md",
     "03LLM/LangChain/06Vector向量化技术与语义搜索.md",
-    "03LLM/LangChain/02模版工程.md",
-    "03LLM/LangChain/01概述/02应用开发.md"
+    "03LLM/LangChain/02模版工程.md"
   ]
 }
