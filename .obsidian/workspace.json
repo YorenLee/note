@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05运维/CICD.md",
+                "file": "01前端/02Css/01基础/选择器.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CICD"
+              "title": "选择器"
             }
           }
         ]
@@ -186,9 +186,9 @@
   },
   "active": "898dacc179c3a19b",
   "lastOpenFiles": [
+    "05运维/CICD.md",
     "05运维/Linux.md",
     "05运维/Docker.md",
-    "05运维/CICD.md",
     "01前端/前端工程化/monorepo架构.md",
     "01前端/前端工程化/编译和构建.md",
     "01前端/02Css/01基础/滚动条.md",
