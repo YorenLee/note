@@ -1,3 +1,6 @@
+---
+update: 2026-04-25T22:38:00
+---
 ## Docker基本操作
 ### 更换镜像源
 ```plain
@@ -298,3 +301,161 @@ docker compose restart   # 重启容器
 - 追求极致体积 → alpine
 - 生产环境平衡选择 → slim  
 - 需要完整功能 → bullseye
+
+
+## 镜像分层与构建缓存
+
+### 1. 镜像 = 只读层叠加
+
+- 每条 Dockerfile 指令产生一层，层只存"差异"，按内容 hash 寻址 → 内容不变就能复用。
+- 镜像 = 多个只读层 + 容器可写层，OverlayFS 叠出来的视图。
+
+![镜像层结构](./assets/cache-stack.png)
+
+### 2. 层缓存命中规则
+
+逐条比对"指令 + 输入"，一致则 `CACHED` 跳过；否则重跑，且**之后的层全部失效**（hash 链断）。
+
+![缓存失效后下方所有层一起失效](./assets/cache-stack-invalidated.png)
+
+如图：`COPY main.c Makefile /src/` 这一层因为文件内容变了导致 cache miss，**它下面的 `WORKDIR` 和 `RUN make build` 即使指令本身没变，也会一起失效**——这就是 hash 链断裂的可视化效果。
+
+| 指令 | 判断依据 |
+| --- | --- |
+| `RUN` | 命令字符串本身（不看产物） |
+| `COPY` / `ADD` | 文件内容 checksum |
+| `FROM` | 基础镜像 digest |
+| `ARG` / `ENV` | 影响后续指令时参与 hash |
+
+→ **指令顺序 = 缓存效率**，变化频率低的放前面。
+
+### 3. 黄金法则：先 lock，后源码
+
+```dockerfile
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install        # lock 不变就 CACHED
+COPY . .
+RUN pnpm build
+```
+
+反过来 `COPY . .` 在前，源码一改 install 就重跑。
+
+### 4. BuildKit cache mount（第二层缓存）
+
+层缓存粒度太粗：lock 改一个包，install 整层失效要重新下载所有包。cache mount 在 RUN 时挂一块**跨构建持久化、不进镜像**的目录：
+
+```dockerfile
+RUN --mount=type=cache,id=pnpm-store,target=/root/.local/share/pnpm/store \
+    pnpm install --frozen-lockfile
+```
+
+`sharing`：`shared`（默认，并发共享）/ `locked`（写互斥，pnpm 用这个）/ `private`。
+
+| 维度 | 层缓存 | cache mount |
+| --- | --- | --- |
+| 进镜像 | 是 | 否 |
+| 粒度 | 整条指令 | 目录级文件 |
+| 失效后果 | 整层重做 | RUN 重跑但内部复用 |
+
+两者**叠加使用**：层缓存最优，命中不了靠 cache mount 兜底。
+
+### 5. Multi-stage：构建环境与运行环境分离
+
+```dockerfile
+FROM node:20 AS builder
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install
+COPY . .
+RUN pnpm build
+
+FROM nginx:alpine
+COPY --from=builder /app/dist /usr/share/nginx/html
+```
+
+最终镜像 = 最后一个 `FROM` 的层 + 显式 `COPY --from` 进来的文件，前面阶段完全丢弃。
+
+### 6. Multi-stage 并行构建
+
+BuildKit 把 Dockerfile 解析成 **DAG**（节点 = stage，边 = `COPY --from=`），**无依赖的 stage 自动并行**。
+
+```dockerfile
+FROM node:20 AS web
+RUN pnpm install && pnpm build         # 阶段 A
+
+FROM golang:1.22 AS api
+RUN go build -o api ./cmd/api          # 阶段 B（与 A 无依赖 → 并行）
+
+FROM nginx:alpine AS runtime
+COPY --from=web /app/dist /usr/share/nginx/html
+COPY --from=api /src/api  /usr/local/bin/api
+```
+
+触发条件：
+- 用 BuildKit（`docker buildx build` 或 `DOCKER_BUILDKIT=1`）。
+- stage 之间无依赖链。
+- 从最终目标（默认最后一个，或 `--target xxx`）反向遍历 DAG，无关 stage 直接跳过。
+
+价值：前后端 / monorepo 多服务一次性并行打包；`--target deps` 可单独构建某阶段。
+注意：并行吃 CPU/内存，CI runner 资源不足反而更慢。
+
+### 7. 远端缓存（CI 必备）
+
+CI 每次环境都是空的，把缓存推到 registry：
+
+```bash
+docker buildx build \
+  --cache-from type=registry,ref=registry.xxx/app:buildcache \
+  --cache-to   type=registry,ref=registry.xxx/app:buildcache,mode=max \
+  -t registry.xxx/app:latest --push .
+```
+
+`mode=max` 连 multi-stage 中间层都推，命中率最高（缓存体积变大）。
+老做法 `BUILDKIT_INLINE_CACHE=1` 把缓存信息嵌进镜像本身，缺点是中间层缓存不到。
+
+### 8. 缓存失效常见坑
+
+1. 没写 `.dockerignore` → `node_modules` / `.git` / `dist` 进 context，`COPY . .` 永远失效。
+2. `RUN echo $(date)`、动态 `ARG BUILD_TIME` 这种"每次不同"的输入，下面缓存全废。
+3. 基础镜像用 `:latest` → 上游一更新缓存清零，生产固定版本或 digest。
+4. `package.json` 或 `pnpm-lock.yaml` 任一变化都会让 install 层失效。
+5. RUN 粒度：会一起变的合并，变化频率不同的拆开。
+
+### 参考文档
+
+**Docker 基础与层缓存**
+- [Docker 概念总览](https://docs.docker.com/get-started/overview/)
+- [Dockerfile 与镜像层概念](https://docs.docker.com/build/concepts/dockerfile/)
+- [构建缓存怎么工作](https://docs.docker.com/build/cache/)
+- [优化构建缓存（实战）](https://docs.docker.com/build/cache/optimize/)
+- [Dockerfile 最佳实践](https://docs.docker.com/build/building/best-practices/)
+
+**BuildKit / cache mount / 远端缓存**
+- [BuildKit 总览](https://docs.docker.com/build/buildkit/)
+- [`RUN --mount` 全部类型](https://docs.docker.com/reference/dockerfile/#run---mount)
+- [cache mount 详解](https://docs.docker.com/build/cache/optimize/#use-cache-mounts)
+- [`--cache-from` / `--cache-to` 后端](https://docs.docker.com/build/cache/backends/)
+- [Registry 作为 cache backend](https://docs.docker.com/build/cache/backends/registry/)
+- [`docker buildx build` 命令参考](https://docs.docker.com/reference/cli/docker/buildx/build/)
+
+**Multi-stage 与并行构建**
+- [Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)
+
+**Dockerfile 指令参考**
+- [Dockerfile 完整 reference](https://docs.docker.com/reference/dockerfile/)
+- [`.dockerignore` 文件](https://docs.docker.com/build/concepts/context/#dockerignore-files)
+
+**pnpm 在 Docker / CI 里的官方建议**
+- [pnpm 的 Docker 集成](https://pnpm.io/docker)
+- [pnpm 的 CI 集成（含 GitLab cache）](https://pnpm.io/continuous-integration#gitlab-ci)
+- [pnpm `store-dir` 配置](https://pnpm.io/settings#store-dir)
+- [`packageManager` 字段（Corepack 锁版本）](https://pnpm.io/installation#using-corepack)
+
+**GitLab CI 缓存（备查）**
+- [GitLab CI `cache` 关键字](https://docs.gitlab.com/ee/ci/yaml/#cache)
+- [`cache:key:files`](https://docs.gitlab.com/ee/ci/yaml/#cachekeyfiles)
+- [`cache:policy`](https://docs.gitlab.com/ee/ci/yaml/#cachepolicy)
+- [`cache:fallback_keys`](https://docs.gitlab.com/ee/ci/yaml/#cachefallback_keys)
+- [GitLab Runner `[runners.cache]`](https://docs.gitlab.com/runner/configuration/advanced-configuration.html#the-runnerscache-section)
+- [K8s executor cache 配置](https://docs.gitlab.com/runner/executors/kubernetes/index.html#configure-cache)
+
+
