@@ -1,3 +1,6 @@
+---
+date: 2026-04-26
+---
 # 基础链：LLMChain
 
 LCEL之前，最基础也最常见的链类型是LLMChain。
