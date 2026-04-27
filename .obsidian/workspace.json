@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03LLM/LangChain/03 chain/03 基于LCEL构建的chains.md",
+                "file": "03LLM/LangChain/04memory/02其他Memory模块.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 基于LCEL构建的chains"
+              "title": "02其他Memory模块"
             }
           }
         ]
@@ -186,8 +186,20 @@
   },
   "active": "898dacc179c3a19b",
   "lastOpenFiles": [
-    "03LLM/LangChain/03 chain/02传统chain的使用.md",
+    "03LLM/LangChain/04memory/01基本Memory使用.md",
+    "03LLM/LangChain/04memory/02其他Memory模块.md",
+    "03LLM/LangChain/assets/VectorStoreRetrieverMemory.png",
+    "03LLM/LangChain/assets/ConversationSummaryMemory.png",
+    "03LLM/LangChain/assets/ConversationTokenBufferMemory.png",
     "03LLM/LangChain/03 chain/03 基于LCEL构建的chains.md",
+    "02后端/Redis.md",
+    "02后端/Nacos.md",
+    "02后端/ElasticSearch.md",
+    "03LLM/LangChain/03 chain/02传统chain的使用.md",
+    "03LLM/LangChain/03 chain/01chains使用.md",
+    "03LLM/LangChain/04memory",
+    "03LLM/LangChain/02Modal IO/05 输出解析器.md",
+    "03LLM/LangChain/02Modal IO/04ChatPromptTemplate.md",
     "03LLM/LangChain/06Vector向量化技术与语义搜索.md",
     "03LLM/LangChain/04 Callback机制与事件驱动架构.md",
     "03LLM/LangChain/02Modal IO/02调用模型2.md",
@@ -195,10 +207,7 @@
     "03LLM/LangChain/assets/RouterChain.png",
     "03LLM/LangChain/assets/SequentialChain.png",
     "03LLM/LangChain/assets/SimpleSequentialChain.png",
-    "03LLM/LangChain/03 chain/01chains使用.md",
-    "03LLM/LangChain/02Modal IO/05 输出解析器.md",
     "03LLM/LangChain/03 chain",
-    "03LLM/LangChain/02Modal IO/04ChatPromptTemplate.md",
     "03LLM/LangChain/01概述/03核心组件.md",
     "03LLM/LangChain/01概述/02应用开发场景.md",
     "03LLM/LangChain/01概述/01架构设计.md",
@@ -212,26 +221,16 @@
     "05运维/CICD.md",
     "01前端/前端工程化/monorepo架构.md",
     "01前端/前端工程化/编译和构建.md",
-    "01前端/02Css/01基础/滚动条.md",
     "01前端/02Css/assets/scrollbar-props_2.png",
     "01前端/02Css/assets/image.png",
-    "01前端/02Css/assets/scrollbar-props_1.png",
-    "01前端/02Css/assets/scrollbar-props.png",
     "01前端/02Css/assets",
-    "01前端/01Html/01.Svg.md",
     "01前端/02Css/01基础",
-    "01前端/02Css/01.基础.md",
-    "03LLM/LangChain/02Modal IO/03PromptTemplate.md",
-    "03LLM/LangChain/05Runnable接口与任务编排系统.md",
-    "03LLM/LangChain/03记忆系统与对话管理.md",
-    "03LLM/LangChain/assets/embedding.png",
     "quickadd-config.json",
     "_templates/update-time.js",
     "_templates",
     "未命名 1.base",
     "未命名.base",
     "未命名.canvas",
-    "03LLM/LangChain/02Modal I/01",
-    "03LLM/LangChain/02Modal I/O"
+    "03LLM/LangChain/02Modal I/01"
   ]
 }
