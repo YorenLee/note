@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04职场实践/大型 MR 拆分指南：为什么以及怎么做.md",
+                "file": "01前端/03JavaScript/02WebAPI/01Navigator-sendBeacon.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "大型 MR 拆分指南：为什么以及怎么做"
+              "title": "01Navigator-sendBeacon"
             }
           }
         ]
@@ -186,6 +186,11 @@
   },
   "active": "898dacc179c3a19b",
   "lastOpenFiles": [
+    "01前端/03JavaScript/02WebAPI/02bfcache.md",
+    "01前端/03JavaScript/02WebAPI/01Navigator-sendBeacon.md",
+    "05运维/Docker.md",
+    "05运维/CICD.md",
+    "04职场实践/大型 MR 拆分指南：为什么以及怎么做.md",
     "01前端/02Css/01基础/选择器.md",
     "01前端/02Css/01基础/滚动条.md",
     "01前端/前端工程化/monorepo架构.md",
@@ -225,11 +230,6 @@
     "03LLM/LangChain/02Modal IO/02调用模型2.md",
     "03LLM/LangChain/02Modal IO/01调用模型1.md",
     "03LLM/LangChain/03 chain",
-    "03LLM/LangChain/01概述/03核心组件.md",
-    "03LLM/LangChain/01概述/02应用开发场景.md",
-    "03LLM/LangChain/01概述/01架构设计.md",
-    "04职场实践/大型 MR 拆分指南：为什么以及怎么做.md",
-    "05运维/Docker.md",
     "01前端/02Css/assets",
     "01前端/02Css/01基础",
     "未命名.canvas"
