@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01前端/03JavaScript/02WebAPI/01Navigator-sendBeacon.md",
+                "file": "01前端/前端工程化/webpack/01核心概念.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01Navigator-sendBeacon"
+              "title": "01核心概念"
             }
           }
         ]
@@ -186,15 +186,20 @@
   },
   "active": "898dacc179c3a19b",
   "lastOpenFiles": [
-    "01前端/03JavaScript/02WebAPI/02bfcache.md",
+    "01前端/前端工程化/webpack/README.md",
+    "01前端/前端工程化/webpack/01核心概念.md",
+    "README.md",
+    "04职场实践/Next.js 容器镜像选择规范.md",
+    "index.md",
+    "01前端/02Css/01基础/选择器.md",
+    "01前端/02Css/01基础/滚动条.md",
+    "01前端/前端工程化/编译和构建.md",
+    "01前端/前端工程化/monorepo架构.md",
     "01前端/03JavaScript/02WebAPI/01Navigator-sendBeacon.md",
+    "01前端/03JavaScript/02WebAPI/02bfcache.md",
     "05运维/Docker.md",
     "05运维/CICD.md",
     "04职场实践/大型 MR 拆分指南：为什么以及怎么做.md",
-    "01前端/02Css/01基础/选择器.md",
-    "01前端/02Css/01基础/滚动条.md",
-    "01前端/前端工程化/monorepo架构.md",
-    "01前端/前端工程化/编译和构建.md",
     "03LLM/LangChain/07Retrieval/01Retrieval.md",
     "03LLM/LangChain/06agent/agent概念以及基础使用.md",
     "03LLM/LangChain/assets/store_retrival.png",
@@ -224,11 +229,6 @@
     "03LLM/LangChain/03 chain/01chains使用.md",
     "03LLM/LangChain/04memory",
     "03LLM/LangChain/02Modal IO/05 输出解析器.md",
-    "03LLM/LangChain/02Modal IO/04ChatPromptTemplate.md",
-    "03LLM/LangChain/06Vector向量化技术与语义搜索.md",
-    "03LLM/LangChain/04 Callback机制与事件驱动架构.md",
-    "03LLM/LangChain/02Modal IO/02调用模型2.md",
-    "03LLM/LangChain/02Modal IO/01调用模型1.md",
     "03LLM/LangChain/03 chain",
     "01前端/02Css/assets",
     "01前端/02Css/01基础",
