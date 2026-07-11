@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06书单/01软技能：代码之外的生存指南.md",
+                "file": "01前端/05TypeScript/01 基础.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01软技能：代码之外的生存指南"
+              "title": "01 基础"
             }
           }
         ]
@@ -186,8 +186,12 @@
   },
   "active": "898dacc179c3a19b",
   "lastOpenFiles": [
-    "06书单/00 待看书单.md",
+    "01前端/05TypeScript/readme.md",
+    "01前端/05TypeScript/01 基础.md",
+    "README.md",
     "06书单/01软技能：代码之外的生存指南.md",
+    "01前端/05TypeScript",
+    "06书单/00 待看书单.md",
     "01前端/02Css/花里胡哨/滚动叙事布局.md",
     "01前端/02Css/花里胡哨/Scrollytelling.md",
     "01前端/02Css/花里胡哨",
@@ -209,12 +213,9 @@
     "06书单/01软技能：代码之外的生存指南",
     "06书单",
     "index.md",
-    "README.md",
     "04职场实践/Next.js 容器镜像选择规范.md",
     "01前端/02Css/01基础/选择器.md",
     "01前端/02Css/01基础/滚动条.md",
-    "01前端/03JavaScript/02WebAPI/01Navigator-sendBeacon.md",
-    "01前端/03JavaScript/02WebAPI/02bfcache.md",
     "03LLM/LangChain/assets/store_retrival.png",
     "03LLM/LangChain/assets/embeding_retrival.png",
     "03LLM/LangChain/assets/retrival_embedding.png",
@@ -231,7 +232,6 @@
     "03LLM/LangChain/assets/VectorStoreRetrieverMemory.png",
     "03LLM/LangChain/assets/ConversationSummaryMemory.png",
     "03LLM/LangChain/assets/ConversationTokenBufferMemory.png",
-    "03LLM/LangChain/04memory",
     "未命名.canvas"
   ]
 }
