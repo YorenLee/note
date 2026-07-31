@@ -1,0 +1,11 @@
+[
+  { "type": "file", "name": "output", "label": "output" },
+  { "type": "file", "name": "module", "label": "module" },
+  { "type": "file", "name": "resolve", "label": "resolve" },
+  { "type": "file", "name": "optimization", "label": "optimization" },
+  { "type": "file", "name": "cache", "label": "cache" },
+  { "type": "file", "name": "devtool-extends-target-watch", "label": "devtool、extends、target 与 watch" },
+  { "type": "file", "name": "externals", "label": "externals" },
+  { "type": "file", "name": "dotenv", "label": "dotenv" },
+  { "type": "file", "name": "stats", "label": "stats" }
+]

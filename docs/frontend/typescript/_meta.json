@@ -1,0 +1,6 @@
+[
+  { "type": "file", "name": "index", "label": "概览" },
+  { "type": "file", "name": "basics", "label": "基础" },
+  { "type": "file", "name": "generics", "label": "泛型" },
+  { "type": "file", "name": "decorators", "label": "装饰器" }
+]

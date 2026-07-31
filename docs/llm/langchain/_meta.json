@@ -1,0 +1,14 @@
+[
+  { "type": "file", "name": "getting-started", "label": "入门" },
+  { "type": "dir", "name": "overview", "label": "概述" },
+  { "type": "file", "name": "template-project", "label": "模板工程" },
+  { "type": "dir", "name": "model-io", "label": "Model I/O" },
+  { "type": "dir", "name": "chains", "label": "Chains" },
+  { "type": "file", "name": "memory-and-conversation", "label": "记忆系统与对话管理" },
+  { "type": "file", "name": "callbacks", "label": "Callback 机制" },
+  { "type": "dir", "name": "memory", "label": "Memory" },
+  { "type": "dir", "name": "tools", "label": "Tools" },
+  { "type": "file", "name": "vector-search", "label": "向量化与语义搜索" },
+  { "type": "dir", "name": "agents", "label": "Agents" },
+  { "type": "dir", "name": "retrieval", "label": "Retrieval" }
+]

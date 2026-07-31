@@ -1,0 +1,8 @@
+[
+  { "type": "file", "name": "index", "label": "概览" },
+  { "type": "dir", "name": "html", "label": "HTML" },
+  { "type": "dir", "name": "css", "label": "CSS" },
+  { "type": "dir", "name": "javascript", "label": "JavaScript" },
+  { "type": "dir", "name": "typescript", "label": "TypeScript" },
+  { "type": "dir", "name": "engineering", "label": "前端工程化" }
+]

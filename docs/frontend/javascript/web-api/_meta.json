@@ -1,0 +1,4 @@
+[
+  { "type": "file", "name": "send-beacon", "label": "Navigator.sendBeacon" },
+  { "type": "file", "name": "bfcache", "label": "bfcache" }
+]

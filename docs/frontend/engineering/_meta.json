@@ -1,0 +1,5 @@
+[
+  { "type": "file", "name": "compilation-and-build", "label": "编译和构建" },
+  { "type": "file", "name": "monorepo", "label": "Monorepo 架构" },
+  { "type": "dir", "name": "webpack", "label": "webpack" }
+]

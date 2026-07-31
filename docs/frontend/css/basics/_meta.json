@@ -1,0 +1,4 @@
+[
+  { "type": "file", "name": "selectors", "label": "选择器" },
+  { "type": "file", "name": "scrollbars", "label": "滚动条" }
+]

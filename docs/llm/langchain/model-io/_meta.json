@@ -1,0 +1,7 @@
+[
+  { "type": "file", "name": "calling-models-1", "label": "调用模型（一）" },
+  { "type": "file", "name": "calling-models-2", "label": "调用模型（二）" },
+  { "type": "file", "name": "prompt-template", "label": "PromptTemplate" },
+  { "type": "file", "name": "chat-prompt-template", "label": "ChatPromptTemplate" },
+  { "type": "file", "name": "output-parsers", "label": "输出解析器" }
+]

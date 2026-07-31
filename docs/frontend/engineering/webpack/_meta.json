@@ -1,0 +1,5 @@
+[
+  { "type": "file", "name": "index", "label": "概览" },
+  { "type": "file", "name": "core-concepts", "label": "核心概念" },
+  { "type": "dir", "name": "configuration", "label": "配置" }
+]

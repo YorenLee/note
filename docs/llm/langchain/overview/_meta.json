@@ -1,0 +1,5 @@
+[
+  { "type": "file", "name": "architecture", "label": "架构设计" },
+  { "type": "file", "name": "use-cases", "label": "应用开发场景" },
+  { "type": "file", "name": "core-components", "label": "核心组件" }
+]

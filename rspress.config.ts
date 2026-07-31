@@ -11,6 +11,7 @@ export default defineConfig({
   description: '记录前端、后端、LLM、工程实践与运维知识',
   globalStyles: path.join(dirname, 'styles/index.css'),
   route: {
+    cleanUrls: true,
     exclude: ['**/superpowers/**'],
   },
   themeConfig: {

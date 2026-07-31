@@ -1,0 +1,4 @@
+[
+  { "type": "file", "name": "basics", "label": "Memory 基础" },
+  { "type": "file", "name": "other-modules", "label": "其他 Memory 模块" }
+]

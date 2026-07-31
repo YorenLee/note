@@ -1,0 +1,6 @@
+[
+  { "type": "file", "name": "index", "label": "概览" },
+  { "type": "file", "name": "linux", "label": "Linux" },
+  { "type": "file", "name": "docker", "label": "Docker" },
+  { "type": "file", "name": "ci-cd", "label": "CI/CD" }
+]

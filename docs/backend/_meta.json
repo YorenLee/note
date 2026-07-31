@@ -1,0 +1,6 @@
+[
+  { "type": "file", "name": "index", "label": "概览" },
+  { "type": "file", "name": "elasticsearch", "label": "Elasticsearch" },
+  { "type": "file", "name": "redis", "label": "Redis" },
+  { "type": "file", "name": "nacos", "label": "Nacos" }
+]

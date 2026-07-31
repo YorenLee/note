@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /01前端/
+      link: /frontend/
     - theme: alt
       text: GitHub
       link: https://github.com/YorenLee/note
