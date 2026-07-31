@@ -17,6 +17,12 @@ body {
     var(--rp-c-bg);
 }
 
+body .rp-home-background {
+  position: fixed;
+  inset: 0;
+  height: auto;
+}
+
 .rp-home-hero__title {
   letter-spacing: -0.04em;
 }
