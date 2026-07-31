@@ -25,7 +25,7 @@ Google 的工程实践文档（[Google Engineering Practices - Small CLs](https:
 这不是审查者不认真，而是人类认知的固有限制。当一个 MR 包含 3000 行改动时，审查者的心理状态大致是这样的：
 
 
-```Plain
+```text
 前 200 行：仔细看，提出有价值的反馈
 200-800 行：开始疲劳，只关注明显问题
 800 行以后：LGTM 🚢
@@ -147,7 +147,7 @@ Google 的建议（[Small CLs - Google Eng Practices](https://google.github.io/e
 核心思路是按依赖方向拆分——先合入被依赖的底层，再合入上层。就像建房子：先打地基，再砌墙，最后装屋顶。
 
 
-```Plain
+```text
 PR 1: 类型定义 + 接口声明
       → 零副作用，只定义"契约"
 
@@ -177,7 +177,7 @@ PR 5: UI / 入口层
 Feature Flag（功能开关）是一种在代码中通过配置控制某个功能是否对用户可见的技术。开关关闭时，新代码虽然已经合入主干，但不会对用户产生任何影响。
 
 
-```TypeScript
+```ts
 // PR 1: 引入 feature flag + 类型定义
 const ENABLE_NEW_EDITOR = process.env.NEXT_PUBLIC_FF_NEW_EDITOR === 'true';
 
@@ -209,7 +209,7 @@ export const NewEditor = () => {
 这个名字来源于热带雨林中的绞杀榕（Strangler Fig）——它不砍倒旧树，而是缠绕在旧树上逐渐生长，最终完全替代旧树。Martin Fowler 将这个比喻[引入了软件工程领域](https://martinfowler.com/bliki/StranglerFigApplication.html)。
 
 
-```Plain
+```text
 阶段 1 [1 个 PR]: 引入中间适配层
       旧代码 → 适配层 → 旧实现（运行行为完全不变）
 
@@ -239,7 +239,7 @@ export const NewEditor = () => {
 **适用场景**：涉及架构决策、存在多种可能方案的改动。
 
 
-```Plain
+```text
 PR 0: RFC / 设计文档（纯文档，不含代码）
       → 收集团队反馈，就技术方案达成共识
       → 明确拆分计划和每个 PR 的范围
@@ -259,7 +259,7 @@ RFC（Request for Comments）是工程团队中常用的设计提案流程——
 
 在实现功能之前，先提交不改变任何运行行为的 PR：
 
-```Plain
+```text
 PR 1: 纯重构——提取函数、拆分文件、调整目录结构
       → 程序运行前后行为完全一致，容易审查
       → 降低后续 PR 的差异噪音
@@ -291,7 +291,7 @@ PR 4-N: 逐步实现功能，每个 PR 让一批测试通过
 
 你的最终目标是从状态 A 到状态 C，但中间可以经过 A → B → C，其中 B 是一个「新旧代码并存」的过渡状态。旧接口暂时保留并标记为即将废弃，新接口先加进来，下一个 PR 再切换调用方并删除旧接口。
 
-```TypeScript
+```ts
 // PR 1: 新增新接口，保留旧接口
 /** @deprecated 请使用 newMethod 替代，将在下个迭代移除 */
 function oldMethod() { /* ... */ }
@@ -326,7 +326,7 @@ VFS PR 的作者实际上也走了类似的路——他先做了 130 个 commit 
 
 **解法**：向前兼容的分步迁移。
 
-```Plain
+```text
 PR 1: 添加新字段（允许为空或设定默认值），代码暂不使用该字段
 PR 2: 代码开始写入新字段，同时继续写入旧字段（双写）
 PR 3: 运行迁移脚本，将历史数据填充到新字段
