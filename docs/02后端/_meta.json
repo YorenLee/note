@@ -1,6 +1,6 @@
 [
   { "type": "file", "name": "index", "label": "概览" },
-  "ElasticSearch",
-  "Redis",
-  "Nacos"
+  { "type": "file", "name": "ElasticSearch", "label": "Elasticsearch" },
+  { "type": "file", "name": "Redis", "label": "Redis" },
+  { "type": "file", "name": "Nacos", "label": "Nacos" }
 ]

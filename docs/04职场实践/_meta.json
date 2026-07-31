@@ -1,5 +1,13 @@
 [
   { "type": "file", "name": "index", "label": "概览" },
-  "大型 MR 拆分指南：为什么以及怎么做",
-  "Next.js 容器镜像选择规范"
+  {
+    "type": "file",
+    "name": "大型 MR 拆分指南：为什么以及怎么做",
+    "label": "大型 MR 拆分指南"
+  },
+  {
+    "type": "file",
+    "name": "Next.js 容器镜像选择规范",
+    "label": "Next.js 容器镜像选择规范"
+  }
 ]

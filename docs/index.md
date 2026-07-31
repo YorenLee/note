@@ -1,10 +1,10 @@
 ---
-layout: home
+pageType: home
 
 hero:
-  name: Yoren 的技术笔记
-  text: 持续整理，保持思考
-  tagline: 前端、后端、LLM、工程实践与运维知识库
+  name: Yoren
+  text: 技术笔记
+  tagline: 持续整理前端、后端、LLM、工程实践与运维知识
   actions:
     - theme: brand
       text: 开始阅读
