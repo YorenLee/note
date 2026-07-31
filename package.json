@@ -1,0 +1,17 @@
+{
+  "name": "note",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.14.0",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "rspress dev",
+    "build": "rspress build",
+    "preview": "rspress preview"
+  },
+  "devDependencies": {
+    "@rspress/core": "^2.0.0"
+  }
+}
