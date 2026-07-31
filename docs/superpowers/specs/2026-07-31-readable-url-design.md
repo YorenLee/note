@@ -38,7 +38,7 @@ Rspress 使用文件系统生成路由，因此直接将用户内容目录和 Ma
 - `06agent` → `agents`
 - `07Retrieval` → `retrieval`
 
-文件名移除数字排序前缀，转换为能够描述内容的英文 kebab-case。技术专有名词使用社区常见拼写，例如 `bfcache`、`send-beacon`、`prompt-template`、`docker`、`redis`。
+所有层级的目录和文件名都移除 `01`、`02`、`03` 等排序前缀，转换为能够描述内容的英文 kebab-case。技术专有名词使用社区常见拼写，例如 `bfcache`、`send-beacon`、`prompt-template`、`docker`、`redis`。页面顺序完全由对应目录的 `_meta.json` 管理，不再把顺序编码进文件系统。
 
 ## 中文显示名称
 
@@ -75,7 +75,7 @@ route: {
 ## 验证
 
 1. 重命名前生成旧路径到新路径的完整映射表。
-2. 批量移动后检查不存在中文或空格形式的用户页面路径。
+2. 批量移动后检查用户页面路径不存在中文、空格或数字排序前缀。
 3. 运行 `pnpm build`，要求退出码为 0，依靠 Rspress 的死链检查发现遗漏引用。
 4. 检查产物包含代表性路由：
    - `frontend/css/basics/selectors.html`
