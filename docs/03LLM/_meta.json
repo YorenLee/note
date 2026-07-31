@@ -1,0 +1,4 @@
+[
+  { "type": "file", "name": "index", "label": "概览" },
+  { "type": "dir", "name": "LangChain", "label": "LangChain" }
+]
