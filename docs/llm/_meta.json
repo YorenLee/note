@@ -1,4 +1,5 @@
 [
   { "type": "file", "name": "index", "label": "概览" },
+  { "type": "file", "name": "agent-concepts", "label": "Agent 核心概念" },
   { "type": "dir", "name": "langchain", "label": "LangChain" }
 ]
