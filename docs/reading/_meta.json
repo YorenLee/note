@@ -1,5 +1,6 @@
 [
   { "type": "file", "name": "index", "label": "概览" },
   { "type": "file", "name": "reading-list", "label": "待看书单" },
-  { "type": "file", "name": "soft-skills", "label": "软技能：代码之外的生存指南" }
+  { "type": "file", "name": "soft-skills", "label": "软技能：代码之外的生存指南" },
+  { "type": "file", "name": "agent-design-patterns", "label": "Agent设计模式：图解可复用智能体架构" }
 ]
