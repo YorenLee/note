@@ -1,6 +1,7 @@
 import { defineConfig } from '@rspress/core';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import katex from 'rspress-plugin-katex';
 import mermaid from 'rspress-plugin-mermaid';
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -11,7 +12,7 @@ export default defineConfig({
   title: 'Yoren 的技术笔记',
   description: '记录前端、后端、LLM、工程实践与运维知识',
   globalStyles: path.join(dirname, 'styles/index.css'),
-  plugins: [mermaid()],
+  plugins: [mermaid(), katex()],
   route: {
     cleanUrls: true,
     exclude: ['**/superpowers/**'],

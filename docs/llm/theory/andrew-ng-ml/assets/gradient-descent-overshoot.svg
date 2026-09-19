@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c0392b"/>
+    </marker>
+  </defs>
+  <rect width="640" height="460" fill="#ffffff"/>
+  <!-- 坐标轴 -->
+  <line x1="60" y1="395" x2="622" y2="395" stroke="#666666" stroke-width="1.5"/>
+  <line x1="60" y1="395" x2="60" y2="28" stroke="#666666" stroke-width="1.5"/>
+  <path d="M 622 395 l -9 -4.5 v 9 z" fill="#666666"/>
+  <path d="M 60 28 l -4.5 9 h 9 z" fill="#666666"/>
+  <!-- 抛物线 J(w)，顶点在 (340, 110) -->
+  <path d="M 60 337 Q 340 -117 620 337" fill="none" stroke="#2a6fb0" stroke-width="2.5"/>
+  <!-- 最小值标记 -->
+  <line x1="340" y1="116" x2="340" y2="395" stroke="#999999" stroke-width="1" stroke-dasharray="4 4"/>
+  <circle cx="340" cy="110" r="6.5" fill="#ffffff" stroke="#2a6fb0" stroke-width="2"/>
+  <text x="340" y="86" text-anchor="middle" font-size="15" fill="#2a6fb0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">最小值</text>
+  <text x="340" y="414" text-anchor="middle" font-size="13" fill="#666666" font-style="italic" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">w*</text>
+  <!-- 学习率太大：来回越过最小值，越走越远 -->
+  <line x1="554" y1="244" x2="126" y2="244" stroke="#c0392b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="127" y1="247" x2="533" y2="230" stroke="#c0392b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="533" y1="231" x2="47" y2="365" stroke="#c0392b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="47" y1="365" x2="573" y2="282" stroke="#c0392b" stroke-width="2" marker-end="url(#arrow)"/>
+  <circle cx="560" cy="250" r="6.5" fill="#c0392b"/>
+  <circle cx="120" cy="250" r="5" fill="#c0392b"/>
+  <circle cx="540" cy="226" r="5" fill="#c0392b"/>
+  <circle cx="40" cy="371" r="5" fill="#c0392b"/>
+  <circle cx="580" cy="277" r="5" fill="#c0392b"/>
+  <text x="560" y="222" text-anchor="middle" font-size="15" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">起点</text>
+  <text x="340" y="432" text-anchor="middle" font-size="14" fill="#555555" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">α 太大：一步跨过最小值，来回震荡，甚至越走越远</text>
+  <!-- 轴标签 -->
+  <text x="628" y="405" text-anchor="end" font-size="15" fill="#333333" font-style="italic" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">w</text>
+  <text x="50" y="40" text-anchor="middle" font-size="15" fill="#333333" font-style="italic" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">J(w)</text>
+</svg>

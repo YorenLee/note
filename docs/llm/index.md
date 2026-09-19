@@ -6,6 +6,7 @@
 
 概念与原理，不涉及具体框架。
 
+- [吴恩达机器学习](./theory/andrew-ng-ml/)
 - [Agent 核心概念](./theory/agent-concepts.md)
 - [生成式人工智能随想笔记](./theory/genai-thoughts.md)
 

@@ -1,4 +1,5 @@
 [
+  { "type": "dir", "name": "andrew-ng-ml", "label": "吴恩达机器学习" },
   { "type": "file", "name": "agent-concepts", "label": "Agent 核心概念" },
   { "type": "file", "name": "genai-thoughts", "label": "生成式人工智能随想笔记" }
 ]

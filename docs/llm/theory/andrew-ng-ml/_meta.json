@@ -1,0 +1,6 @@
+[
+  { "type": "file", "name": "index", "label": "概览" },
+  { "type": "file", "name": "linear-regression", "label": "线性回归模型" },
+  { "type": "file", "name": "cost-function", "label": "成本函数" },
+  { "type": "file", "name": "gradient-descent", "label": "梯度下降" }
+]

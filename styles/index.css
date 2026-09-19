@@ -7,6 +7,17 @@
   --rp-radius: 14px;
 }
 
+/* 侧边栏：去掉与正文之间的竖线分隔（加 body 前缀提高优先级，主题样式注入顺序在 globalStyles 之后） */
+body .rp-doc-layout__sidebar {
+  border-right: none;
+}
+
+/* 侧边栏：去掉嵌套项左侧的树形引导竖线 */
+body .rp-sidebar-item--group-item::before,
+body .rp-sidebar-item--group-item.rp-sidebar-item--active .rp-sidebar-item__left::before {
+  display: none;
+}
+
 body {
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
