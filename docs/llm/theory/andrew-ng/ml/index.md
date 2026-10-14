@@ -1,4 +1,6 @@
-# 吴恩达机器学习
+# 机器学习
+
+吴恩达《Machine Learning Specialization》课程一·监督学习（回归与分类）的学习笔记。
 
 ## 监督学习（Supervised Learning）
 

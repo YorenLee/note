@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460">
+  <rect width="640" height="460" fill="#ffffff"/>
+  <!-- 面板标题 -->
+  <text x="170" y="38" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">连续特征：试阈值</text>
+  <text x="490" y="38" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">类别特征：独热编码</text>
+  <!-- 图例 -->
+  <circle cx="52" cy="62" r="4" fill="#2a6fb0"/>
+  <text x="60" y="66" font-size="11" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">猫</text>
+  <circle cx="112" cy="62" r="4" fill="#c0392b"/>
+  <text x="120" y="66" font-size="11" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">狗</text>
+  <!-- 体重数轴 -->
+  <line x1="40" y1="170" x2="300" y2="170" stroke="#666666" stroke-width="1.5"/>
+  <g stroke="#666666" stroke-width="1">
+    <line x1="40" y1="165" x2="40" y2="175"/><line x1="92" y1="165" x2="92" y2="175"/>
+    <line x1="144" y1="165" x2="144" y2="175"/><line x1="196" y1="165" x2="196" y2="175"/>
+    <line x1="248" y1="165" x2="248" y2="175"/><line x1="300" y1="165" x2="300" y2="175"/>
+  </g>
+  <g font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">
+    <text x="40" y="190" text-anchor="middle">4</text><text x="92" y="190" text-anchor="middle">6</text>
+    <text x="144" y="190" text-anchor="middle">8</text><text x="196" y="190" text-anchor="middle">10</text>
+    <text x="248" y="190" text-anchor="middle">12</text><text x="300" y="190" text-anchor="middle">14</text>
+  </g>
+  <text x="170" y="210" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">体重（kg）</text>
+  <!-- 样本点：猫 -->
+  <g fill="#2a6fb0">
+    <circle cx="53" cy="170" r="5"/><circle cx="66" cy="170" r="5"/><circle cx="79" cy="170" r="5"/>
+    <circle cx="92" cy="170" r="5"/><circle cx="105" cy="170" r="5"/><circle cx="118" cy="170" r="5"/>
+    <circle cx="133.6" cy="170" r="5"/><circle cx="157" cy="170" r="5"/><circle cx="175.2" cy="170" r="5"/>
+  </g>
+  <!-- 样本点：狗 -->
+  <g fill="#c0392b">
+    <circle cx="123.2" cy="170" r="5"/><circle cx="144" cy="170" r="5"/><circle cx="165" cy="170" r="5"/>
+    <circle cx="170" cy="170" r="5"/><circle cx="183" cy="170" r="5"/><circle cx="196" cy="170" r="5"/>
+    <circle cx="209" cy="170" r="5"/><circle cx="222" cy="170" r="5"/><circle cx="235" cy="170" r="5"/>
+    <circle cx="248" cy="170" r="5"/>
+  </g>
+  <!-- 阈值切分 -->
+  <line x1="144" y1="130" x2="144" y2="250" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="144" y="120" text-anchor="middle" font-size="12" font-style="italic" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">体重 ≤ 8？</text>
+  <text x="90" y="150" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">7 猫 1 狗</text>
+  <text x="230" y="150" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">2 猫 9 狗</text>
+  <text x="170" y="272" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">换不同阈值都试一遍，选信息增益最大的</text>
+  <!-- 独热编码表 -->
+  <g stroke="#999999" stroke-width="1" fill="none">
+    <rect x="370" y="170" width="60" height="32"/><rect x="440" y="170" width="60" height="32"/><rect x="510" y="170" width="60" height="32"/>
+    <rect x="370" y="202" width="60" height="32"/><rect x="440" y="202" width="60" height="32"/><rect x="510" y="202" width="60" height="32"/>
+    <rect x="370" y="234" width="60" height="32"/><rect x="440" y="234" width="60" height="32"/><rect x="510" y="234" width="60" height="32"/>
+  </g>
+  <g font-size="12" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">
+    <text x="400" y="191" fill="#333333">耳朵形状</text>
+    <text x="470" y="191" fill="#333333">尖耳朵</text>
+    <text x="540" y="191" fill="#333333">垂耳朵</text>
+    <text x="400" y="223" fill="#555555">尖</text>
+    <text x="470" y="223" fill="#2a6fb0">1</text>
+    <text x="540" y="223" fill="#2a6fb0">0</text>
+    <text x="400" y="255" fill="#555555">垂</text>
+    <text x="470" y="255" fill="#2a6fb0">0</text>
+    <text x="540" y="255" fill="#2a6fb0">1</text>
+  </g>
+  <text x="490" y="292" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">每个类别变成一列 0/1 特征</text>
+  <text x="490" y="312" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">是哪个类别，哪列就是 1</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460">
+  <defs>
+    <marker id="ig-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#999999"/>
+    </marker>
+  </defs>
+  <rect width="640" height="460" fill="#ffffff"/>
+  <!-- 面板标题 -->
+  <text x="165" y="38" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">按耳朵形状分裂</text>
+  <text x="475" y="38" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">按脸型分裂</text>
+  <!-- 面板一 -->
+  <rect x="90" y="60" width="150" height="48" rx="8" fill="#ffffff" stroke="#2a6fb0" stroke-width="2"/>
+  <text x="165" y="80" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">10 个样本</text>
+  <text x="165" y="98" text-anchor="middle" font-size="11" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">5 猫 5 狗 · H = 1.0</text>
+  <line x1="165" y1="108" x2="105" y2="178" stroke="#999999" stroke-width="1.5" marker-end="url(#ig-arrow)"/>
+  <line x1="165" y1="108" x2="225" y2="178" stroke="#999999" stroke-width="1.5" marker-end="url(#ig-arrow)"/>
+  <rect x="55" y="180" width="100" height="48" rx="8" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="105" y="200" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">尖耳朵：5 个</text>
+  <text x="105" y="218" text-anchor="middle" font-size="11" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">4 猫 1 狗 · H=0.72</text>
+  <rect x="175" y="180" width="100" height="48" rx="8" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="225" y="200" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">垂耳朵：5 个</text>
+  <text x="225" y="218" text-anchor="middle" font-size="11" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">1 猫 4 狗 · H=0.72</text>
+  <text x="165" y="262" text-anchor="middle" font-size="12" fill="#555555" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">加权平均 = 0.5×0.72 + 0.5×0.72 = 0.72</text>
+  <text x="165" y="284" text-anchor="middle" font-size="12" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">信息增益 = 1.0 − 0.72 = 0.28</text>
+  <!-- 面板二 -->
+  <rect x="400" y="60" width="150" height="48" rx="8" fill="#ffffff" stroke="#2a6fb0" stroke-width="2"/>
+  <text x="475" y="80" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">10 个样本</text>
+  <text x="475" y="98" text-anchor="middle" font-size="11" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">5 猫 5 狗 · H = 1.0</text>
+  <line x1="475" y1="108" x2="415" y2="178" stroke="#999999" stroke-width="1.5" marker-end="url(#ig-arrow)"/>
+  <line x1="475" y1="108" x2="535" y2="178" stroke="#999999" stroke-width="1.5" marker-end="url(#ig-arrow)"/>
+  <rect x="365" y="180" width="100" height="48" rx="8" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="415" y="200" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">圆脸：7 个</text>
+  <text x="415" y="218" text-anchor="middle" font-size="11" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">4 猫 3 狗 · H=0.99</text>
+  <rect x="505" y="180" width="100" height="48" rx="8" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="555" y="200" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">非圆脸：3 个</text>
+  <text x="555" y="218" text-anchor="middle" font-size="11" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">1 猫 2 狗 · H=0.92</text>
+  <text x="475" y="262" text-anchor="middle" font-size="12" fill="#555555" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">加权平均 = 0.7×0.99 + 0.3×0.92 = 0.97</text>
+  <text x="475" y="284" text-anchor="middle" font-size="12" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">信息增益 = 1.0 − 0.97 = 0.03</text>
+  <!-- 结论 -->
+  <text x="320" y="345" text-anchor="middle" font-size="13" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">结论：耳朵形状的信息增益更大（0.28 &gt; 0.03），选它分裂</text>
+</svg>

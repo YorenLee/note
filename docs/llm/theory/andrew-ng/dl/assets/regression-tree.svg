@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460">
+  <rect width="640" height="460" fill="#ffffff"/>
+  <!-- 坐标轴 -->
+  <line x1="110" y1="75" x2="110" y2="340" stroke="#666666" stroke-width="1.5"/>
+  <line x1="110" y1="340" x2="545" y2="340" stroke="#666666" stroke-width="1.5"/>
+  <text x="552" y="345" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">体长（cm）</text>
+  <text x="100" y="70" text-anchor="end" font-size="14" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">体重（kg）</text>
+  <!-- 分裂阈值 -->
+  <line x1="400" y1="90" x2="400" y2="340" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="400" y="82" text-anchor="middle" font-size="12" font-style="italic" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">体长 ≤ 20？</text>
+  <!-- 左右组均值（叶节点预测） -->
+  <line x1="110" y1="225" x2="400" y2="225" stroke="#2a6fb0" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="118" y="216" font-size="11" fill="#2a6fb0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">左组均值 ≈ 8.7</text>
+  <line x1="400" y1="131" x2="545" y2="131" stroke="#2a6fb0" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="408" y="122" font-size="11" fill="#2a6fb0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">右组均值 ≈ 15.8</text>
+  <!-- 样本点 -->
+  <g fill="#2a6fb0">
+    <circle cx="168" cy="273.75" r="5"/><circle cx="197" cy="247.25" r="5"/>
+    <circle cx="240.5" cy="234" r="5"/><circle cx="284" cy="207.5" r="5"/>
+    <circle cx="313" cy="220.75" r="5"/><circle cx="356.5" cy="167.75" r="5"/>
+    <circle cx="429" cy="154.5" r="5"/><circle cx="458" cy="128" r="5"/>
+    <circle cx="487" cy="141.25" r="5"/><circle cx="516" cy="101.5" r="5"/>
+  </g>
+  <!-- 底部说明 -->
+  <text x="327" y="390" text-anchor="middle" font-size="12" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">叶节点预测 = 组内样本的平均值，选分裂让组内数值最集中（方差最小）</text>
+</svg>

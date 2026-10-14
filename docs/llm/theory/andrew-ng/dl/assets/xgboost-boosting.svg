@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460">
+  <defs>
+    <marker id="xg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#999999"/>
+    </marker>
+  </defs>
+  <rect width="640" height="460" fill="#ffffff"/>
+  <!-- 标题 -->
+  <text x="320" y="50" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">提升（boosting）：一棵接一棵训练，每棵都盯着前面的误差练</text>
+  <!-- 树 1 -->
+  <line x1="80" y1="116" x2="64" y2="131" stroke="#999999" stroke-width="1.5"/>
+  <line x1="80" y1="116" x2="96" y2="131" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="80" cy="110" r="7" fill="#ffffff" stroke="#2a6fb0" stroke-width="1.5"/>
+  <circle cx="62" cy="135" r="6" fill="#c0392b"/><circle cx="98" cy="135" r="6" fill="#c0392b"/>
+  <text x="80" y="170" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">树 1</text>
+  <!-- 残差 1 -->
+  <line x1="106" y1="110" x2="151" y2="110" stroke="#999999" stroke-width="1.5" marker-end="url(#xg-arrow)"/>
+  <rect x="155" y="85" width="90" height="50" rx="6" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="200" y="105" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">残差 1</text>
+  <text x="200" y="123" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">（树 1 的误差）</text>
+  <!-- 树 2 -->
+  <line x1="245" y1="110" x2="288" y2="110" stroke="#999999" stroke-width="1.5" marker-end="url(#xg-arrow)"/>
+  <line x1="310" y1="116" x2="294" y2="131" stroke="#999999" stroke-width="1.5"/>
+  <line x1="310" y1="116" x2="326" y2="131" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="310" cy="110" r="7" fill="#ffffff" stroke="#2a6fb0" stroke-width="1.5"/>
+  <circle cx="292" cy="135" r="6" fill="#c0392b"/><circle cx="328" cy="135" r="6" fill="#c0392b"/>
+  <text x="310" y="170" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">树 2</text>
+  <!-- 残差 2 -->
+  <line x1="336" y1="110" x2="381" y2="110" stroke="#999999" stroke-width="1.5" marker-end="url(#xg-arrow)"/>
+  <rect x="385" y="85" width="90" height="50" rx="6" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="430" y="105" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">残差 2</text>
+  <text x="430" y="123" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">（树 2 的误差）</text>
+  <!-- 树 3 -->
+  <line x1="475" y1="110" x2="508" y2="110" stroke="#999999" stroke-width="1.5" marker-end="url(#xg-arrow)"/>
+  <line x1="530" y1="116" x2="514" y2="131" stroke="#999999" stroke-width="1.5"/>
+  <line x1="530" y1="116" x2="546" y2="131" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="530" cy="110" r="7" fill="#ffffff" stroke="#2a6fb0" stroke-width="1.5"/>
+  <circle cx="512" cy="135" r="6" fill="#c0392b"/><circle cx="548" cy="135" r="6" fill="#c0392b"/>
+  <text x="530" y="170" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">树 3</text>
+  <!-- 省略号 -->
+  <line x1="556" y1="110" x2="581" y2="110" stroke="#999999" stroke-width="1.5" marker-end="url(#xg-arrow)"/>
+  <text x="592" y="115" text-anchor="middle" font-size="16" fill="#999999" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">…</text>
+  <!-- 残差说明 -->
+  <text x="320" y="205" text-anchor="middle" font-size="12" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">残差 = 真实值 − 现有预测：下一棵树拟合的就是这部分还没学会的内容</text>
+  <!-- 最终预测 -->
+  <rect x="170" y="240" width="300" height="46" rx="8" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
+  <text x="320" y="268" text-anchor="middle" font-size="13" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">最终预测 = 各棵树的预测之和</text>
+  <text x="320" y="325" text-anchor="middle" font-size="12" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">与装袋不同：装袋的树并列训练，提升的树顺序接力</text>
+</svg>

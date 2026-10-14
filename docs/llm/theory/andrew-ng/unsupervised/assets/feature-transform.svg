@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460">
+  <rect width="640" height="460" fill="#ffffff"/>
+  <!-- 面板标题 -->
+  <text x="175" y="42" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">变换前：长尾偏斜</text>
+  <text x="485" y="42" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">变换后：接近正态</text>
+  <!-- 左面板 -->
+  <line x1="60" y1="60" x2="60" y2="300" stroke="#666666" stroke-width="1.5"/>
+  <line x1="60" y1="300" x2="290" y2="300" stroke="#666666" stroke-width="1.5"/>
+  <text x="296" y="314" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">x</text>
+  <text x="52" y="56" text-anchor="end" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">样本数</text>
+  <path d="M 62,294 C 72,130 80,90 94,86 C 122,95 150,150 185,222 C 220,268 260,292 288,297" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+  <text x="252" y="252" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">长尾</text>
+  <!-- 右面板 -->
+  <line x1="370" y1="60" x2="370" y2="300" stroke="#666666" stroke-width="1.5"/>
+  <line x1="370" y1="300" x2="600" y2="300" stroke="#666666" stroke-width="1.5"/>
+  <text x="606" y="314" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">log(x)</text>
+  <text x="362" y="56" text-anchor="end" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">样本数</text>
+  <path d="M 372,297 C 400,150 440,88 485,85 C 530,88 570,150 598,297" fill="none" stroke="#2a6fb0" stroke-width="2.5"/>
+  <!-- 中间标注 -->
+  <text x="330" y="170" text-anchor="middle" font-size="12" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">取对数</text>
+  <!-- 底部说明 -->
+  <text x="320" y="400" text-anchor="middle" font-size="12" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">对偏斜的特征取对数（log(x)、√x 等），分布更接近正态，p(x) 拟合得更好</text>
+</svg>

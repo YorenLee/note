@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460">
+  <rect width="640" height="460" fill="#ffffff"/>
+  <!-- 表头 -->
+  <text x="135" y="122" text-anchor="middle" font-size="11" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">电影 ╲ 用户</text>
+  <text x="220" y="122" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">小明</text>
+  <text x="280" y="122" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">小红</text>
+  <text x="340" y="122" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">小刚</text>
+  <text x="400" y="122" text-anchor="middle" font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">小芳</text>
+  <text x="465" y="122" text-anchor="middle" font-size="12" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">新用户</text>
+  <text x="530" y="122" text-anchor="middle" font-size="12" fill="#2a6fb0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">平均分 μ</text>
+  <!-- 行标签 -->
+  <g font-size="12" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">
+    <text x="135" y="154" text-anchor="middle">爱到最后</text>
+    <text x="135" y="186" text-anchor="middle">浪漫一生</text>
+    <text x="135" y="218" text-anchor="middle">可爱小狗</text>
+    <text x="135" y="250" text-anchor="middle">极速飙车</text>
+    <text x="135" y="282" text-anchor="middle">剑与空手道</text>
+  </g>
+  <!-- 评分值 -->
+  <g font-size="12" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">
+    <text x="220" y="154" fill="#333333">5</text><text x="280" y="154" fill="#333333">5</text>
+    <text x="340" y="154" fill="#666666">?</text><text x="400" y="154" fill="#333333">0</text>
+    <text x="465" y="154" fill="#c0392b">?</text><text x="530" y="154" fill="#2a6fb0">3.3</text>
+    <text x="220" y="186" fill="#333333">5</text><text x="280" y="186" fill="#666666">?</text>
+    <text x="340" y="186" fill="#333333">4</text><text x="400" y="186" fill="#333333">0</text>
+    <text x="465" y="186" fill="#c0392b">?</text><text x="530" y="186" fill="#2a6fb0">3.0</text>
+    <text x="220" y="218" fill="#333333">0</text><text x="280" y="218" fill="#666666">?</text>
+    <text x="340" y="218" fill="#333333">0</text><text x="400" y="218" fill="#333333">5</text>
+    <text x="465" y="218" fill="#c0392b">?</text><text x="530" y="218" fill="#2a6fb0">1.7</text>
+    <text x="220" y="250" fill="#333333">0</text><text x="280" y="250" fill="#333333">0</text>
+    <text x="340" y="250" fill="#666666">?</text><text x="400" y="250" fill="#333333">4</text>
+    <text x="465" y="250" fill="#c0392b">?</text><text x="530" y="250" fill="#2a6fb0">1.3</text>
+    <text x="220" y="282" fill="#333333">0</text><text x="280" y="282" fill="#666666">?</text>
+    <text x="340" y="282" fill="#666666">?</text><text x="400" y="282" fill="#666666">?</text>
+    <text x="465" y="282" fill="#c0392b">?</text><text x="530" y="282" fill="#2a6fb0">0</text>
+  </g>
+  <!-- 表格线 -->
+  <g stroke="#999999" stroke-width="1" fill="none">
+    <rect x="80" y="100" width="480" height="192"/>
+    <line x1="190" y1="100" x2="190" y2="292"/>
+    <line x1="250" y1="100" x2="250" y2="292"/>
+    <line x1="310" y1="100" x2="310" y2="292"/>
+    <line x1="370" y1="100" x2="370" y2="292"/>
+    <line x1="430" y1="100" x2="430" y2="292"/>
+    <line x1="500" y1="100" x2="500" y2="292"/>
+    <line x1="80" y1="132" x2="560" y2="132"/>
+    <line x1="80" y1="164" x2="560" y2="164"/>
+    <line x1="80" y1="196" x2="560" y2="196"/>
+    <line x1="80" y1="228" x2="560" y2="228"/>
+    <line x1="80" y1="260" x2="560" y2="260"/>
+  </g>
+  <!-- 底部说明 -->
+  <text x="320" y="340" text-anchor="middle" font-size="12" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">新用户一列全是 ?：正则化把 w、b 压成 0，预测 = 0 + μ，即每部电影的平均分</text>
+  <text x="320" y="362" text-anchor="middle" font-size="12" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">μ 是每部电影所有已知评分的平均</text>
+</svg>

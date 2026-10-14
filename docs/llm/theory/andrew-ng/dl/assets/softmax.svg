@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460">
+  <defs>
+    <marker id="softmax-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#999999"/>
+    </marker>
+  </defs>
+  <rect width="640" height="460" fill="#ffffff"/>
+  <!-- 连接线（输入 → 各类别分数） -->
+  <line x1="168" y1="215" x2="312" y2="95" stroke="#999999" stroke-width="1.5" marker-end="url(#softmax-arrow)"/>
+  <line x1="173" y1="224" x2="307" y2="186" stroke="#999999" stroke-width="1.5" marker-end="url(#softmax-arrow)"/>
+  <line x1="173" y1="236" x2="307" y2="274" stroke="#999999" stroke-width="1.5" marker-end="url(#softmax-arrow)"/>
+  <line x1="168" y1="245" x2="312" y2="365" stroke="#999999" stroke-width="1.5" marker-end="url(#softmax-arrow)"/>
+  <!-- 连接上的参数标注 -->
+  <text x="242" y="152" text-anchor="middle" font-size="13" font-style="italic" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">w<tspan dy="4" font-size="10">1</tspan><tspan dy="-4">, b</tspan><tspan dy="4" font-size="10">1</tspan></text>
+  <text x="242" y="202" text-anchor="middle" font-size="13" font-style="italic" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">w<tspan dy="4" font-size="10">2</tspan><tspan dy="-4">, b</tspan><tspan dy="4" font-size="10">2</tspan></text>
+  <text x="242" y="252" text-anchor="middle" font-size="13" font-style="italic" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">w<tspan dy="4" font-size="10">3</tspan><tspan dy="-4">, b</tspan><tspan dy="4" font-size="10">3</tspan></text>
+  <text x="242" y="302" text-anchor="middle" font-size="13" font-style="italic" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">w<tspan dy="4" font-size="10">4</tspan><tspan dy="-4">, b</tspan><tspan dy="4" font-size="10">4</tspan></text>
+  <!-- 输入神经元 -->
+  <circle cx="150" cy="230" r="24" fill="#ffffff" stroke="#2a6fb0" stroke-width="2"/>
+  <text x="150" y="236" text-anchor="middle" font-size="16" font-style="italic" fill="#2a6fb0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">x</text>
+  <!-- 各类别分数 -->
+  <circle cx="330" cy="80" r="24" fill="#ffffff" stroke="#2a6fb0" stroke-width="2"/>
+  <circle cx="330" cy="180" r="24" fill="#ffffff" stroke="#2a6fb0" stroke-width="2"/>
+  <circle cx="330" cy="280" r="24" fill="#ffffff" stroke="#2a6fb0" stroke-width="2"/>
+  <circle cx="330" cy="380" r="24" fill="#ffffff" stroke="#2a6fb0" stroke-width="2"/>
+  <text x="330" y="86" text-anchor="middle" font-size="16" font-style="italic" fill="#2a6fb0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">z<tspan dy="4" font-size="11">1</tspan></text>
+  <text x="330" y="186" text-anchor="middle" font-size="16" font-style="italic" fill="#2a6fb0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">z<tspan dy="4" font-size="11">2</tspan></text>
+  <text x="330" y="286" text-anchor="middle" font-size="16" font-style="italic" fill="#2a6fb0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">z<tspan dy="4" font-size="11">3</tspan></text>
+  <text x="330" y="386" text-anchor="middle" font-size="16" font-style="italic" fill="#2a6fb0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">z<tspan dy="4" font-size="11">4</tspan></text>
+  <!-- softmax 框与输出 -->
+  <rect x="445" y="55" width="170" height="350" rx="8" fill="none" stroke="#999999" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="530" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#555555" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">softmax</text>
+  <text x="530" y="106" text-anchor="middle" font-size="12" font-style="italic" fill="#555555" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">a_j = e^z_j / Σ_k e^z_k</text>
+  <circle cx="560" cy="80" r="24" fill="#c0392b" stroke="#c0392b" stroke-width="2"/>
+  <circle cx="560" cy="180" r="24" fill="#c0392b" stroke="#c0392b" stroke-width="2"/>
+  <circle cx="560" cy="280" r="24" fill="#c0392b" stroke="#c0392b" stroke-width="2"/>
+  <circle cx="560" cy="380" r="24" fill="#c0392b" stroke="#c0392b" stroke-width="2"/>
+  <text x="560" y="86" text-anchor="middle" font-size="16" font-style="italic" fill="#ffffff" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">a<tspan dy="4" font-size="11">1</tspan></text>
+  <text x="560" y="186" text-anchor="middle" font-size="16" font-style="italic" fill="#ffffff" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">a<tspan dy="4" font-size="11">2</tspan></text>
+  <text x="560" y="286" text-anchor="middle" font-size="16" font-style="italic" fill="#ffffff" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">a<tspan dy="4" font-size="11">3</tspan></text>
+  <text x="560" y="386" text-anchor="middle" font-size="16" font-style="italic" fill="#ffffff" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">a<tspan dy="4" font-size="11">4</tspan></text>
+  <!-- 各列说明 -->
+  <text x="150" y="422" text-anchor="middle" font-size="15" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">输入特征</text>
+  <text x="150" y="442" text-anchor="middle" font-size="12" font-style="italic" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">input x</text>
+  <text x="330" y="422" text-anchor="middle" font-size="15" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">各类别分数</text>
+  <text x="330" y="442" text-anchor="middle" font-size="12" font-style="italic" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">z_j = w_j · x + b_j</text>
+  <text x="530" y="422" text-anchor="middle" font-size="15" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">softmax 输出</text>
+  <text x="530" y="442" text-anchor="middle" font-size="12" font-style="italic" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">a_1 + a_2 + a_3 + a_4 = 1</text>
+</svg>

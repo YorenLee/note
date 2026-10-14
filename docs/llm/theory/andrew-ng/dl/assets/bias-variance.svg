@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460">
+  <rect width="640" height="460" fill="#ffffff"/>
+  <!-- 面板一：d=1 直线（高偏差） -->
+  <line x1="40" y1="70" x2="40" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <line x1="40" y1="335" x2="190" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <text x="197" y="340" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">x</text>
+  <text x="32" y="66" text-anchor="end" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">y</text>
+  <line x1="40" y1="248.5" x2="185" y2="196.9" stroke="#c0392b" stroke-width="2.5"/>
+  <g fill="#2a6fb0">
+    <circle cx="47.25" cy="136.3" r="3.5"/><circle cx="66.1" cy="235.6" r="3.5"/>
+    <circle cx="83.5" cy="285.3" r="3.5"/><circle cx="100.9" cy="301.9" r="3.5"/>
+    <circle cx="119.75" cy="285.3" r="3.5"/><circle cx="138.6" cy="235.6" r="3.5"/>
+    <circle cx="156" cy="179.3" r="3.5"/><circle cx="177.75" cy="126.3" r="3.5"/>
+  </g>
+  <text x="115" y="385" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">d = 1</text>
+  <text x="115" y="405" text-anchor="middle" font-size="12" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">高偏差 · 欠拟合</text>
+  <!-- 面板二：d=2 二次曲线（恰好） -->
+  <line x1="245" y1="70" x2="245" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <line x1="245" y1="335" x2="395" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <text x="402" y="340" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">x</text>
+  <text x="237" y="66" text-anchor="end" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">y</text>
+  <polyline points="245,137.4 266.75,234.3 288.5,292.4 310.25,311.8 332,292.4 353.75,234.3 375.5,137.4 382.75,96.5" fill="none" stroke="#2a6fb0" stroke-width="2.5" stroke-linejoin="round"/>
+  <g fill="#2a6fb0">
+    <circle cx="252.25" cy="136.3" r="3.5"/><circle cx="271.1" cy="235.6" r="3.5"/>
+    <circle cx="288.5" cy="285.3" r="3.5"/><circle cx="305.9" cy="301.9" r="3.5"/>
+    <circle cx="324.75" cy="285.3" r="3.5"/><circle cx="343.6" cy="235.6" r="3.5"/>
+    <circle cx="361" cy="179.3" r="3.5"/><circle cx="382.75" cy="126.3" r="3.5"/>
+  </g>
+  <text x="320" y="385" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">d = 2</text>
+  <text x="320" y="405" text-anchor="middle" font-size="12" fill="#2a6fb0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">恰好拟合</text>
+  <!-- 面板三：d=4 高次曲线（高方差） -->
+  <line x1="450" y1="70" x2="450" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <line x1="450" y1="335" x2="600" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <text x="607" y="340" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">x</text>
+  <text x="442" y="66" text-anchor="end" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">y</text>
+  <path d="M 457,136 C 460,190 465,215 471,236 C 477,257 482,270 488,285 C 494,297 500,305 506,302 C 512,299 518,293 525,285 C 531,277 537,260 544,236 C 549,216 555,195 561,179 C 567,163 575,140 583,126" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+  <g fill="#2a6fb0">
+    <circle cx="457.25" cy="136.3" r="3.5"/><circle cx="471.1" cy="235.6" r="3.5"/>
+    <circle cx="488.5" cy="285.3" r="3.5"/><circle cx="505.9" cy="301.9" r="3.5"/>
+    <circle cx="524.75" cy="285.3" r="3.5"/><circle cx="543.6" cy="235.6" r="3.5"/>
+    <circle cx="561" cy="179.3" r="3.5"/><circle cx="582.75" cy="126.3" r="3.5"/>
+  </g>
+  <text x="525" y="385" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">d = 4</text>
+  <text x="525" y="405" text-anchor="middle" font-size="12" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">高方差 · 过拟合</text>
+</svg>

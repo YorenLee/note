@@ -71,3 +71,5 @@ b = b - \alpha \frac{1}{m} \sum_{i=1}^{m} \left( f(x^{(i)}) - y^{(i)} \right)
 ## 批量梯度下降
 
 **批量梯度下降（Batch Gradient Descent）** —— 上面的算法每一步都扫过全部 m 个训练样本再求和，因此叫「批量」。其他常见变体：随机梯度下降（Stochastic Gradient Descent）每一步只用 1 个样本；小批量梯度下降（Mini-batch Gradient Descent）每一步用一小部分样本。
+
+以上是单变量的情形，特征多于一个时见[多元线性回归](./multiple-linear-regression.md)。

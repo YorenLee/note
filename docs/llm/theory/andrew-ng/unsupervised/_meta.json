@@ -1,0 +1,5 @@
+[
+  { "type": "file", "name": "index", "label": "概览" },
+  { "type": "file", "name": "clustering", "label": "聚类" },
+  { "type": "file", "name": "anomaly-detection", "label": "异常检测" }
+]

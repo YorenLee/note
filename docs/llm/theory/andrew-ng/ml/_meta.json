@@ -1,0 +1,9 @@
+[
+  { "type": "file", "name": "index", "label": "概览" },
+  { "type": "file", "name": "linear-regression", "label": "线性回归模型" },
+  { "type": "file", "name": "cost-function", "label": "成本函数" },
+  { "type": "file", "name": "gradient-descent", "label": "梯度下降" },
+  { "type": "file", "name": "multiple-linear-regression", "label": "多元线性回归" },
+  { "type": "file", "name": "logistic-regression", "label": "逻辑回归" },
+  { "type": "file", "name": "overfitting", "label": "过拟合与欠拟合" }
+]

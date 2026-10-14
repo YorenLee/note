@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460">
+  <defs>
+    <marker id="cc-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#999999"/>
+    </marker>
+  </defs>
+  <rect width="640" height="460" fill="#ffffff"/>
+  <!-- 面板标题 -->
+  <text x="170" y="55" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">基于内容的过滤</text>
+  <text x="470" y="55" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">协同过滤</text>
+  <!-- 左：基于内容 -->
+  <rect x="70" y="100" width="200" height="44" rx="8" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="170" y="127" text-anchor="middle" font-size="13" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">特征 x：人工给定</text>
+  <rect x="70" y="170" width="200" height="44" rx="8" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="170" y="197" text-anchor="middle" font-size="13" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">评分 y：训练数据</text>
+  <rect x="70" y="250" width="200" height="44" rx="8" fill="#ffffff" stroke="#2a6fb0" stroke-width="2"/>
+  <text x="170" y="277" text-anchor="middle" font-size="13" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">只学 w、b</text>
+  <line x1="170" y1="144" x2="170" y2="166" stroke="#999999" stroke-width="1.5" marker-end="url(#cc-arrow)"/>
+  <line x1="170" y1="214" x2="170" y2="246" stroke="#999999" stroke-width="1.5" marker-end="url(#cc-arrow)"/>
+  <!-- 右：协同过滤 -->
+  <rect x="370" y="100" width="200" height="44" rx="8" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <text x="470" y="127" text-anchor="middle" font-size="13" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">评分 y：训练数据</text>
+  <rect x="370" y="170" width="200" height="44" rx="8" fill="#ffffff" stroke="#2a6fb0" stroke-width="2"/>
+  <text x="470" y="197" text-anchor="middle" font-size="13" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">w、b 和特征 x 一起学</text>
+  <line x1="470" y1="144" x2="470" y2="166" stroke="#999999" stroke-width="1.5" marker-end="url(#cc-arrow)"/>
+  <!-- 底部说明 -->
+  <text x="320" y="335" text-anchor="middle" font-size="12" fill="#666666" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">差别就在特征 x：一个人工给定，一个从评分数据里自己学出来</text>
+</svg>

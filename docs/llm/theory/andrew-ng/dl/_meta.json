@@ -1,0 +1,11 @@
+[
+  { "type": "file", "name": "index", "label": "概览" },
+  { "type": "file", "name": "neural-network", "label": "神经网络" },
+  { "type": "file", "name": "model-training", "label": "训练模型" },
+  { "type": "file", "name": "softmax", "label": "多分类 Softmax" },
+  { "type": "file", "name": "advanced-concepts", "label": "进阶网络概念" },
+  { "type": "file", "name": "diagnosing-bias-variance", "label": "诊断偏差与方差" },
+  { "type": "file", "name": "precision-recall", "label": "精确率与召回率" },
+  { "type": "file", "name": "decision-tree", "label": "决策树" },
+  { "type": "file", "name": "regression-tree", "label": "回归树" }
+]

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460">
+  <rect width="640" height="460" fill="#ffffff"/>
+  <!-- 面板一：λ=0 无正则化（高方差） -->
+  <line x1="40" y1="70" x2="40" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <line x1="40" y1="335" x2="190" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <text x="197" y="340" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">x</text>
+  <text x="32" y="66" text-anchor="end" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">y</text>
+  <path d="M 47,136 C 50,190 55,215 61,236 C 67,257 72,270 78,285 C 84,297 90,305 96,302 C 102,299 108,293 115,285 C 121,277 127,260 134,236 C 139,216 145,195 151,179 C 157,163 165,140 173,126" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+  <g fill="#2a6fb0">
+    <circle cx="47.25" cy="136.3" r="3.5"/><circle cx="66.1" cy="235.6" r="3.5"/>
+    <circle cx="83.5" cy="285.3" r="3.5"/><circle cx="100.9" cy="301.9" r="3.5"/>
+    <circle cx="119.75" cy="285.3" r="3.5"/><circle cx="138.6" cy="235.6" r="3.5"/>
+    <circle cx="156" cy="179.3" r="3.5"/><circle cx="177.75" cy="126.3" r="3.5"/>
+  </g>
+  <text x="115" y="385" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">λ = 0</text>
+  <text x="115" y="405" text-anchor="middle" font-size="12" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">高方差 · 过拟合</text>
+  <!-- 面板二：λ 适中（恰好） -->
+  <line x1="245" y1="70" x2="245" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <line x1="245" y1="335" x2="395" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <text x="402" y="340" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">x</text>
+  <text x="237" y="66" text-anchor="end" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">y</text>
+  <polyline points="245,137.4 266.75,234.3 288.5,292.4 310.25,311.8 332,292.4 353.75,234.3 375.5,137.4 382.75,96.5" fill="none" stroke="#2a6fb0" stroke-width="2.5" stroke-linejoin="round"/>
+  <g fill="#2a6fb0">
+    <circle cx="252.25" cy="136.3" r="3.5"/><circle cx="271.1" cy="235.6" r="3.5"/>
+    <circle cx="288.5" cy="285.3" r="3.5"/><circle cx="305.9" cy="301.9" r="3.5"/>
+    <circle cx="324.75" cy="285.3" r="3.5"/><circle cx="343.6" cy="235.6" r="3.5"/>
+    <circle cx="361" cy="179.3" r="3.5"/><circle cx="382.75" cy="126.3" r="3.5"/>
+  </g>
+  <text x="320" y="385" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">λ 适中</text>
+  <text x="320" y="405" text-anchor="middle" font-size="12" fill="#2a6fb0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">恰好拟合</text>
+  <!-- 面板三：λ 很大（高偏差） -->
+  <line x1="450" y1="70" x2="450" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <line x1="450" y1="335" x2="600" y2="335" stroke="#666666" stroke-width="1.5"/>
+  <text x="607" y="340" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">x</text>
+  <text x="442" y="66" text-anchor="end" font-size="13" font-style="italic" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">y</text>
+  <line x1="450" y1="223.2" x2="595" y2="223.2" stroke="#c0392b" stroke-width="2.5"/>
+  <g fill="#2a6fb0">
+    <circle cx="457.25" cy="136.3" r="3.5"/><circle cx="471.1" cy="235.6" r="3.5"/>
+    <circle cx="488.5" cy="285.3" r="3.5"/><circle cx="505.9" cy="301.9" r="3.5"/>
+    <circle cx="524.75" cy="285.3" r="3.5"/><circle cx="543.6" cy="235.6" r="3.5"/>
+    <circle cx="561" cy="179.3" r="3.5"/><circle cx="582.75" cy="126.3" r="3.5"/>
+  </g>
+  <text x="525" y="385" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">λ 很大</text>
+  <text x="525" y="405" text-anchor="middle" font-size="12" fill="#c0392b" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">高偏差 · 欠拟合</text>
+</svg>
