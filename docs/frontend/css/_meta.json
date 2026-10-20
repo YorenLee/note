@@ -1,5 +1,5 @@
 [
   { "type": "file", "name": "index", "label": "概览" },
-  { "type": "dir", "name": "basics", "label": "基础" },
-  { "type": "dir", "name": "creative", "label": "创意效果" }
+  { "type": "dir", "name": "basics", "label": "基础", "collapsed": true },
+  { "type": "dir", "name": "creative", "label": "创意效果", "collapsed": true }
 ]

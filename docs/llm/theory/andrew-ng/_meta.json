@@ -1,8 +1,8 @@
 [
   { "type": "file", "name": "index", "label": "概览" },
-  { "type": "dir", "name": "ml", "label": "机器学习" },
-  { "type": "dir", "name": "dl", "label": "深度学习" },
-  { "type": "dir", "name": "unsupervised", "label": "无监督学习" },
-  { "type": "dir", "name": "recommenders", "label": "推荐系统" },
-  { "type": "dir", "name": "rl", "label": "强化学习" }
+  { "type": "dir", "name": "ml", "label": "机器学习", "collapsed": true },
+  { "type": "dir", "name": "dl", "label": "深度学习", "collapsed": true },
+  { "type": "dir", "name": "unsupervised", "label": "无监督学习", "collapsed": true },
+  { "type": "dir", "name": "recommenders", "label": "推荐系统", "collapsed": true },
+  { "type": "dir", "name": "rl", "label": "强化学习", "collapsed": true }
 ]

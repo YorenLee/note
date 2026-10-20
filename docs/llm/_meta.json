@@ -1,5 +1,5 @@
 [
   { "type": "file", "name": "index", "label": "概览" },
-  { "type": "dir", "name": "theory", "label": "理论" },
-  { "type": "dir", "name": "practice", "label": "实践" }
+  { "type": "dir", "name": "theory", "label": "理论", "collapsed": true },
+  { "type": "dir", "name": "practice", "label": "实践", "collapsed": true }
 ]
