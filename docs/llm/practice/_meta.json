@@ -1,4 +1,5 @@
 [
-  { "type": "dir", "name": "langchain", "label": "LangChain" },
-  { "type": "dir", "name": "workplace", "label": "职场实践" }
+  { "type": "dir", "name": "langchain", "label": "LangChain", "collapsed": true },
+  { "type": "dir", "name": "rag", "label": "RAG", "collapsed": true },
+  { "type": "dir", "name": "workplace", "label": "职场实践", "collapsed": true }
 ]
