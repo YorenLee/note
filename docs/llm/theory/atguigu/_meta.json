@@ -1,0 +1,4 @@
+[
+  { "type": "file", "name": "index", "label": "概览" },
+  { "type": "dir", "name": "ml", "label": "机器学习", "collapsed": true }
+]
